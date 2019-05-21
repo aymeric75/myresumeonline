@@ -8,6 +8,8 @@ use App\Skill;
 
 use App\Language;
 
+use App\Education;
+
 use Illuminate\Http\Request;
 
 class PagesController extends Controller
@@ -21,6 +23,8 @@ class PagesController extends Controller
 
     	$languages = Language::all();
 
-    	return view('welcome', ['cvs' => $cvs, 'skills' => $skills, 'languages' => $languages]);
+    	$educations = Education::all();
+
+    	return view('welcome', ['cvs' => $cvs, 'skills' => $skills, 'languages' => $languages, 'educations' => $educations]);
     }
 }

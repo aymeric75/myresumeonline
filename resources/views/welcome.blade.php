@@ -97,12 +97,49 @@
 
 
         <p class="lead">
-            “Protons give an atom its identity, electrons its personality.”<br>- Bill Bryson, A short history of nearly everything
+            “Les protons donnent à l'atome son identité, et les électrons sa personnalité.”<br>- Bill Bryson, Une histoire de tout, ou presque...
         </p>
+
+
 
 
         <hr>
 
+        <h3>Formations</h3>
+
+        <div class="experiences">
+            
+            @foreach ($educations as $education)
+
+                <div class="experience row">
+                    <div class="col-md-4">
+                        <h4>{{ $education->company }}</h4>
+                        <p class="experience-period">
+                           {{ $education->date }}           </p>
+                    </div>
+                    <div class="col-md-8">
+                        <p>
+                            <strong>{{ $education->title }}</strong>
+                            <span class="hidden-phone">
+                                {!! $education->desc !!}     </span>
+                            <span class="experience-details">
+                                <span class="location">
+                                    <span class="glyphicon glyphicon-map-marker"></span>
+                                    {{ $education->place }}                  </span>
+                            </span>
+                            </p>
+                    </div>
+                </div>
+
+            @endforeach
+
+        </div> <!--  .experiences -->
+
+
+
+        <hr>
+
+        <h3>Emplois</h3>
 
         <div class="experiences">
             
@@ -155,7 +192,7 @@
                         @foreach ($skills as $k => $skill)
 
 
-                            @if ($k > 6)
+                            @if ($k > 7)
                                 @continue
                             @else
 
@@ -199,7 +236,7 @@
                         @foreach ($skills as $k => $skill)
 
 
-                            @if ($k < 6)
+                            @if ($k < 8)
                                 @continue
                             @else
 
@@ -333,15 +370,9 @@
         
             </div> <!--  row -->
 
-
-
-
-
-
-
             <div class="text-center project-referal">
                 <p>Ce projet est construit à partir de Laravel + Vue.js + Bootstrap</p>
-                <a href="https://github.com/pascalvgemert/resume" class="btn btn-primary" target="_blank">Voir le projet sur Github</a>
+                <a href="https://github.com/aymeric75/myresumeonline" class="btn btn-primary" target="_blank">Voir le projet sur Github</a>
             </div>
 
         </div> <!-- #abilities -->
@@ -350,13 +381,10 @@
     </div> <!-- .background-white -->
 
 
-
-
-
     <div id="projects" class="container">
         <h2>Projets</h2>
         <p class="lead">
-            “You can do anything you set your mind to.”<br>- Benjamin Franklin
+            "Vous trouverez la clé du succès sous le réveille-matin"<br>- Benjamin Franklin
         </p>
 
         <hr>
@@ -367,13 +395,28 @@
                 
             <div class="col-md-6 col-sm-12 col-xs-12">
                 <figure class="effect">
-                    <img src="images/project_mals.jpg" alt="Mals">
+                    <img src="images/loi-de-normandie.png" alt="Mals">
                     
                     <figcaption>
-                        <h3>Mals</h3>
-                        <p>Mals, a creative agency located in Rotterdam.</p>
-                        <p><strong>Tags:</strong> <br>Development, Wordpress, Bootstrap</p>
-                        <a href="http://studiomals.com" target="_blank">View more</a>
+                        <h3>Loi Denormandie</h3>
+                        <p>J'ai réalisé ce site pour une entreprise dans le secteur immobilier</p>
+                        <p><strong>Tags:</strong> <br>Wordpress, Vue.js, Bootstrap</p>
+                        <a href="https://www.loi-de-normandie.fr" target="_blank">Voir plus</a>
+                        <span class="icon">
+                            <span class="glyphicon glyphicon-new-window"></span>
+                        </span>
+                    </figcaption> 
+                </figure>
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <figure class="effect">
+                    <img src="images/lcee.png" alt="SOAP - Den Bosch">
+                    
+                    <figcaption>
+                        <h3>LCEE - La Chiropraxie en entreprise</h3>
+                        <p>J'ai réalisé ce site pour une association de chiropracteurs</p>
+                        <p><strong>Tags:</strong> <br>Wordpress, Divi</p>
+                        <a href="https://www.lcee.fr/" target="_blank">View more</a>
                         <span class="icon">
                             <span class="glyphicon glyphicon-new-window"></span>
                         </span>
@@ -384,13 +427,13 @@
                 
             <div class="col-md-6 col-sm-12 col-xs-12">
                 <figure class="effect">
-                    <img src="images/project_mals.jpg" alt="SOAP - Den Bosch">
+                    <img src="images/location-etudiant.png" alt="Location étudiant">
                     
                     <figcaption>
-                        <h3>SOAP - Den Bosch</h3>
-                        <p>Build the website of the local barbershop.</p>
-                        <p><strong>Tags:</strong> <br>Design, Development, Bootstrap, Wordpress</p>
-                        <a href="http://soaphair.nl" target="_blank">View more</a>
+                        <h3>location-etudiant.fr</h3>
+                        <p>Refonte front-end complète</p>
+                        <p><strong>Tags:</strong> <br>SASS, FlexBox, JQuery</p>
+                        <a href="http://oranjebitter-rotterdam.nl" target="_blank">Voir plus</a>
                         <span class="icon">
                             <span class="glyphicon glyphicon-new-window"></span>
                         </span>
@@ -401,30 +444,13 @@
                 
             <div class="col-md-6 col-sm-12 col-xs-12">
                 <figure class="effect">
-                    <img src="images/project_mals.jpg" alt="Oranjebitter Rotterdam">
+                    <img src="images/la-toque-dor.png" alt="La toque d'or">
                     
                     <figcaption>
-                        <h3>Oranjebitter Rotterdam</h3>
-                        <p>Build a website for the Oranjebitter Festival in Rotterdam (3 years in a row)</p>
-                        <p><strong>Tags:</strong> <br>Development, Bootstrap, Wordpress</p>
-                        <a href="http://oranjebitter-rotterdam.nl" target="_blank">View more</a>
-                        <span class="icon">
-                            <span class="glyphicon glyphicon-new-window"></span>
-                        </span>
-                    </figcaption> 
-                </figure>
-            </div>
-
-                
-            <div class="col-md-6 col-sm-12 col-xs-12">
-                <figure class="effect">
-                    <img src="images/project_mals.jpg" alt="Oetelspel">
-                    
-                    <figcaption>
-                        <h3>Oetelspel</h3>
-                        <p>An online game specially for Carneval at 's-Hertogenbosch.</p>
-                        <p><strong>Tags:</strong> <br>Development, Concept, Founder</p>
-                        <a href="http://oetelspel.nl" target="_blank">View more</a>
+                        <h3>La toque d'or</h3>
+                        <p>Refonte front-end</p>
+                        <p><strong>Tags:</strong> <br>Prestashop, SASS, JQuery</p>
+                        <a href="https://www.latoquedor.com" target="_blank">View more</a>
                         <span class="icon">
                             <span class="glyphicon glyphicon-new-window"></span>
                         </span>
@@ -444,7 +470,7 @@
         <div id="contact" class="container">
             <h2>Contact</h2>
             <p class="lead">
-                “If I had asked people what they wanted, they would have said faster horses. ”<br>- Henry Ford
+                “Si j'avais demandé aux gens ce qu'ils voulaient, ils m'auraient répondu des chevaux plus rapides”<br>- Henry Ford
             </p>
 
             <hr>
@@ -453,29 +479,19 @@
                 <div class="col-md-6">
                     <ul class="no-bullets">
                         <li>
-                            <a href="http://twitter.com/pascalvgemert" target="_blank">
-                                <span class="icon icon-twitter"></span>
-                                http://twitter.com/pascalvgemert                </a>
-                        </li>
-                        <li>
-                            <a href="http://linkedin.nl/in/pascalvgemert/" target="_blank">
+                            <a href="https://www.linkedin.com/in/aymeric-barbin-8b6539b9/" target="_blank">
                                 <span class="icon icon-linkedin"></span>
-                                http://linkedin.nl/in/pascalvgemert/                </a>
+                                https://www.linkedin.com/in/aymeric-barbin-8b6539b9               </a>
                         </li>
                     </ul>
                 </div>
                 <div class="col-md-6">
                     <ul class="no-bullets">
-                        <!--<li>
-                            <a href="javascript:void(0);">
-                                <span class="icon icon-skype"></span>
-                                pascalvgemert               </a>
-                        </li>-->
                         <li>
-                            <a href="mailto:ln.tremegnavlacsap@lacsap">
+                            <a href="mailto:example@hotmail.fr">
                                 <span class="icon icon-email"></span>
                                 <span style="unicode-bidi:bidi-override; direction: rtl;">
-                                    ln.tremegnavlacsap@lacsap                   </span>
+                                    example@hotmail.fr                   </span>
                             </a>
                         </li>
                     </ul>
