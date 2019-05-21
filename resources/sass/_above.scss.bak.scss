@@ -1,0 +1,348 @@
+
+
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('/fonts/OpenSans-Regular.ttf');
+}
+
+
+
+@font-face {
+    font-family: 'Open Sans Light';
+    src: url('/fonts/OpenSans-Light.ttf');
+}
+
+
+html, body {
+
+    font-family: 'Open Sans';
+    font-size: 15px;
+    line-height: 1.64;
+    background: #F3EFE0;
+}
+
+
+h2, h3 {
+    font-weight: 300;
+    color: #22A39F;
+}
+
+
+h1, h4 {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+
+h2 {
+    font-size: 54px;
+    text-align: center;
+    font-family: 'Open Sans Light';
+}
+
+
+hr {
+    margin: 40px 0px;
+    border-color: #727878;
+    opacity: 0.2;
+}
+
+p.lead {
+    text-align: center;
+    color: #727878;
+    line-height: 1.4;
+    font-size: 21px;
+}
+
+
+ul.no-bullets {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.btn-primary { background-color: #22A39F; border-color: #1c8784; }
+.btn-primary:hover { background-color: #1c8784;  border-color: #1c8784; }
+
+.jumbotron {
+
+	background: white url("/../images/background.jpg") no-repeat fixed center;
+	background-size: cover;
+
+	margin-bottom: 0px;
+	padding: 0px;
+}
+
+.jumbotron .overlay {
+    background-color: #22A39F;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    opacity: 0.75;
+    filter: alpha(opacity=75);
+    z-index: 2;
+}
+
+.jumbotron .container {
+    position: relative;
+    top: 28%;
+    z-index: 4;
+    text-align: center;
+    //padding: 40px 180px;
+	color: #FFFFFF;
+	h1 {
+		padding-bottom: 20px;
+		border-bottom: 1px solid #FFFFFF;
+    	border-bottom-color: rgb(255, 255, 255);
+		border-bottom-color: rgba(255,255,255,0.35);
+		display: inline-block;
+        font-size: 63px;
+	}
+}
+
+
+
+.container {
+    max-width: 1280px;
+    //padding: 40px 180px;
+}
+
+
+
+
+
+.jumbotron div p.lead {
+    font-size: 28px;
+    font-weight: 200;
+    font-family: 'Open Sans Light';
+}
+
+
+
+
+.background-white {
+    background-color: white;
+}
+
+.background-white .container {
+    max-width: 1280px;
+    padding: 40px 180px;
+}
+
+
+
+#profile h2 {
+    font-size: 54px;
+    text-align: center;
+    color: #22A39F;
+    font-weight: 300;
+    font-family: 'Open Sans Light';
+}
+
+
+#profile .row > div {
+    margin-bottom: 20px;
+}
+
+#profile div div img {
+    clip-path: circle(40% at center);
+}
+
+
+
+#profile p.lead {
+    font-size: 21px;
+    margin-bottom: 20px;
+    font-weight: 300;
+    line-height: 1.4;
+}
+
+#profile hr {
+    margin: 40px 0px;
+    border-color: #727878;
+    opacity: 0.2;
+    filter: alpha(opacity=20);
+}
+
+
+#experiences.container {
+    max-width: 1280px;
+    padding: 40px 180px;
+}
+
+#experiences h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#experiences p.lead {
+    margin-bottom: 20px;
+}
+
+
+#experiences .experience .experience-details * {
+    color: #22A39F;
+}
+
+#experiences .experience {
+    margin-bottom: 20px;
+}
+
+#experiences .experience p > strong {
+    display: block;
+    padding-top: 8px;
+    margin-bottom: 10px;
+}
+
+#experiences .experience .experience-details {
+    display: block;
+    margin-top: 6px;
+}
+
+
+
+#abilities ul > li { min-height: 30px; padding: 3px 0px; }
+#abilities ul > li:hover { background: #F2F2F2; }
+#abilities ul > li .ability-title { display: inline-block; width: 60%; }
+#abilities ul > li .ability-score { float: right; }
+#abilities ul > li .ability-score .glyphicon { 
+    color: #DFE0E0; 
+    font-size: 14px; 
+     
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+#abilities ul > li .ability-score .glyphicon.filled { color: #22A39F; }
+
+#abilities ul > li:hover .ability-score .glyphicon { margin-left: 2px; } 
+
+
+.project-referal { margin-top: 40px; }
+.project-referal p { font-style: italic; color: #999999; }
+
+
+
+/* #projects .row { margin: 0px; } // bootstrap 3.1- hack */
+#projects .row > div { margin-bottom: 30px; }
+#projects figure { position: relative; overflow: hidden; }
+#projects figure h3 { color: #FFF; font-weight: 600; margin-bottom: 5px; }
+#projects figure p > strong { width: 60px; display: inline-block; margin: 0px; }
+#projects figure img { width: 110%; }
+#projects figure figcaption {
+    padding: 20px 30px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+}
+#projects figure a {
+    z-index: 1000;
+    text-indent: 200%;
+    white-space: nowrap;
+    font-size: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+}
+#projects figure .icon { 
+    background: #22A39F;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 48px;
+    height: 48px;
+}
+#projects figure .icon span {
+    font-size: 18px;
+    line-height: 18px;
+    padding: 15px;
+}
+
+
+
+/*---------------*/
+/***** EFFECT *****/
+/*---------------*/
+
+figure.effect {
+    background: #22A39F;
+    color: #FFF;
+}
+
+figure.effect img {
+    width: -webkit-calc(100% + 20px);
+    width: calc(100% + 20px);
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(-10px,0,0);
+    transform: translate3d(-10px,0,0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+figure.effect:hover img {
+    opacity: 0.2;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+figure.effect figcaption {
+    text-align: left;
+}
+
+figure.effect h3 {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 20px;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect:hover h3 {
+    opacity: 1;
+}
+
+figure.effect h3::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    content: '';
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate3d(-100%,0,0);
+    transform: translate3d(-100%,0,0);
+}
+
+figure.effect:hover h3::after {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+figure.effect p {
+    padding-top: 10px;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(100%,0,0);
+    transform: translate3d(100%,0,0);
+}
+
+figure.effect:hover p {
+    opacity: 1;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
